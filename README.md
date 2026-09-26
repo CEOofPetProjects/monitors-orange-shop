@@ -5,7 +5,7 @@ This project simulates a corporate market intelligence pipeline by analyzing e-c
 
 A core highlight of this repository is the dual-engine analytical framework: I executed identical deep-dive analytical tasks twice: using SQL queries and using pandas (the library, not the endangered animals). This intentionally shows off my dual mastery of both database queries and programming scripts (peanut butter and jelly).
 
-### Tech stack/skills
+## Tech stack/skills
 *   **Database architecture:** ERD, relational schema optimization, SQL VIEW, sqlite3 Python library
 *   **Dual-engine analytics:** SQL vs pandas
 *   **Data visualization:** Matplotlib and Seaborn
