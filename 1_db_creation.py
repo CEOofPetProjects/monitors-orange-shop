@@ -15,7 +15,7 @@ def create_database() -> None:
                 name TEXT UNIQUE NOT NULL
             );
 
-            CREATE TABLE IF NOT EXISTS matrix_types (
+            CREATE TABLE IF NOT EXISTS panel_types (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 name TEXT UNIQUE NOT NULL
             );
@@ -32,7 +32,7 @@ def create_database() -> None:
                 h_res INTEGER,
                 v_res INTEGER,
                 refresh_rate INTEGER,
-                matrix_type_id INTEGER,
+                panel_type_id INTEGER,
                 brightness INTEGER,
                 contrast INTEGER,
                 h_view_angle INTEGER,
@@ -51,14 +51,14 @@ def create_database() -> None:
                 has_adaptive_sync INTEGER NOT NULL DEFAULT 0 CHECK (has_adaptive_sync IN (0, 1)),
                 is_smart INTEGER NOT NULL DEFAULT 0 CHECK (is_smart IN (0, 1)),
                 FOREIGN KEY (brand_id) REFERENCES brands(id),
-                FOREIGN KEY (matrix_type_id) REFERENCES matrix_types(id)
+                FOREIGN KEY (panel_type_id) REFERENCES panel_types(id)
             );
 
             CREATE INDEX IF NOT EXISTS idx_monitor_list_brand_id
                 ON monitor_list(brand_id);
 
-            CREATE INDEX IF NOT EXISTS idx_monitor_list_matrix_type_id
-                ON monitor_list(matrix_type_id);
+            CREATE INDEX IF NOT EXISTS idx_monitor_list_panel_type_id
+                ON monitor_list(panel_type_id);
 
             CREATE INDEX IF NOT EXISTS idx_monitor_list_snapshot_datetime
                 ON monitor_list(snapshot_datetime);
@@ -76,7 +76,7 @@ def create_database() -> None:
                 s.h_res || 'x' || s.v_res AS resolution_str,
                 s.h_res AS h_resolution,
                 s.v_res AS v_resolution,
-                m.name AS matrix_type,
+                m.name AS panel_type,
                 s.refresh_rate,
                 s.brightness,
                 s.contrast,
@@ -98,7 +98,7 @@ def create_database() -> None:
                 s.is_smart
             FROM monitor_list s
             LEFT JOIN brands b ON s.brand_id = b.id
-            LEFT JOIN matrix_types m ON s.matrix_type_id = m.id;
+            LEFT JOIN panel_types m ON s.panel_type_id = m.id;
             """)
         print("Successfully created database")
     except sqlite3.Error as e:
