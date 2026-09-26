@@ -68,21 +68,21 @@ def load_csv_to_sqlite(csv_path: str, db_path: str = "data/monitors.db") -> None
                 h_res = int(h_res) if h_res is not None and pd.notna(h_res) else None
                 v_res = int(v_res) if v_res is not None and pd.notna(v_res) else None
 
-                # inserting matrix type if present, then retrieving its primary key ID
-                matrix_name = clean_text(row.get('Тип матрицы'))
-                matrix_type_id = None
-                if matrix_name:
-                    cursor.execute("INSERT OR IGNORE INTO matrix_types (name) VALUES (?)", (matrix_name,))
-                    cursor.execute("SELECT id FROM matrix_types WHERE name = ?", (matrix_name,))
-                    matrix_row = cursor.fetchone()
-                    if matrix_row is None:
-                        raise RuntimeError(f"Could not find/create matrix type '{matrix_name}' (row {row_num})")
-                    matrix_type_id = matrix_row[0]
+                # inserting panel type if present, then retrieving its primary key ID
+                panel_name = clean_text(row.get('Тип матрицы'))
+                panel_type_id = None
+                if panel_name:
+                    cursor.execute("INSERT OR IGNORE INTO panel_types (name) VALUES (?)", (panel_name,))
+                    cursor.execute("SELECT id FROM panel_types WHERE name = ?", (panel_name,))
+                    panel_row = cursor.fetchone()
+                    if panel_row is None:
+                        raise RuntimeError(f"Could not find/create panel type '{panel_name}' (row {row_num})")
+                    panel_type_id = panel_row[0]
 
                 cursor.execute("""
                     INSERT INTO monitor_list (
                         snapshot_datetime, brand_id, model, price, rating, reviews_count,
-                        diagonal, h_res, v_res, refresh_rate, matrix_type_id, brightness,
+                        diagonal, h_res, v_res, refresh_rate, panel_type_id, brightness,
                         contrast, h_view_angle, v_view_angle, curvature_radius,
                         hdmi_count, hdmi_version, dp_count, dp_version,
                         has_vga, has_dvi, has_usbc, usb_count,
@@ -99,7 +99,7 @@ def load_csv_to_sqlite(csv_path: str, db_path: str = "data/monitors.db") -> None
                     h_res,
                     v_res,
                     row.get('Частота (Гц)'),
-                    matrix_type_id,
+                    panel_type_id,
                     row.get('Яркость (Кд/м²)'),
                     row.get('Контрастность'),
                     row.get('Горизонтальный угол обзора'),
