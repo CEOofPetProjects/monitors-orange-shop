@@ -48,9 +48,9 @@ def load_csv_to_sqlite(csv_path: str, db_path: str = "data/monitors.db") -> None
 
             for row_num, row in df.iterrows():
                 # validating brand name (required NOT NULL column), skip row if missing
-                brand_name = clean_text(row['Бренд'])
+                brand_name = clean_text(row['brand'])
                 if not brand_name:
-                    print(f"  Skipping row {row_num}: missing brand name ('Модель'={row.get('Модель')!r})")
+                    print(f"  Skipping row {row_num}: missing brand name ('model'={row.get('model')!r})")
                     skipped_count += 1
                     continue
 
@@ -63,13 +63,13 @@ def load_csv_to_sqlite(csv_path: str, db_path: str = "data/monitors.db") -> None
                 brand_id = brand_row[0]
 
                 # extracting horizontal and vertical resolutions safely as integers
-                h_res = row.get('Горизонтальное разрешение')
-                v_res = row.get('Вертикальное разрешение')
+                h_res = row.get('h_resolution')
+                v_res = row.get('v_resolution')
                 h_res = int(h_res) if h_res is not None and pd.notna(h_res) else None
                 v_res = int(v_res) if v_res is not None and pd.notna(v_res) else None
 
                 # inserting panel type if present, then retrieving its primary key ID
-                panel_name = clean_text(row.get('Тип матрицы'))
+                panel_name = clean_text(row.get('panel_type'))
                 panel_type_id = None
                 if panel_name:
                     cursor.execute("INSERT OR IGNORE INTO panel_types (name) VALUES (?)", (panel_name,))
@@ -91,33 +91,33 @@ def load_csv_to_sqlite(csv_path: str, db_path: str = "data/monitors.db") -> None
                 """, (
                     snapshot_datetime,
                     brand_id,
-                    row['Модель'],
-                    row.get('Стоимость'),
-                    row.get('Оценка'),
-                    row.get('Отзывы'),
-                    row.get('Диагональ'),
+                    row['model'],
+                    row.get('price'),
+                    row.get('rating'),
+                    row.get('reviews_count'),
+                    row.get('diagonal'),
                     h_res,
                     v_res,
-                    row.get('Частота (Гц)'),
+                    row.get('refresh_rate'),
                     panel_type_id,
-                    row.get('Яркость (Кд/м²)'),
-                    row.get('Контрастность'),
-                    row.get('Горизонтальный угол обзора'),
-                    row.get('Вертикальный угол обзора'),
-                    row.get('Изгиб экрана'),
-                    row.get('Кол-во HDMI'),
-                    row.get('Версия HDMI'),
-                    row.get('Кол-во DP'),
-                    row.get('Версия DP'),
+                    row.get('brightness'),
+                    row.get('contrast'),
+                    row.get('h_view_angle'),
+                    row.get('v_view_angle'),
+                    row.get('curvature_radius'),
+                    row.get('hdmi_count'),
+                    row.get('hdmi_version'),
+                    row.get('dp_count'),
+                    row.get('dp_version'),
                     # booleans go through to_flag() so missing values become 0 instead of None/NULL
-                    to_flag(row.get('VGA')),
-                    to_flag(row.get('DVI')),
-                    to_flag(row.get('USB-C')),
-                    row.get('Кол-во USB'),
-                    to_flag(row.get('AMD Sync')),
-                    to_flag(row.get('NVIDIA Sync')),
-                    to_flag(row.get('Adaptive Sync')),
-                    to_flag(row.get('Smart'))
+                    to_flag(row.get('has_vga')),
+                    to_flag(row.get('has_dvi')),
+                    to_flag(row.get('has_usbc')),
+                    row.get('usb_count'),
+                    to_flag(row.get('has_amd_sync')),
+                    to_flag(row.get('has_nvidia_sync')),
+                    to_flag(row.get('has_adaptive_sync')),
+                    to_flag(row.get('is_smart'))
                 ))
                 inserted_count += 1
 
