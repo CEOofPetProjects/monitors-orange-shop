@@ -25,8 +25,6 @@ The project is modularized into sequential scripts that mirror a professional ET
 * ```6_panel_types_stacked.py``` and ```6_resolution_stacked.py``` to construct 100% stacked bar charts to establish baseline feature expectations across four dynamic price quartiles (Budget, Lower-mid, Upper-mid, Premium)
 
 ## ERD
-> I was today years old when I found out that you can just shove your SQL code into drawio and it will automatically create an ERD for you... you learn something new every day I guess.
-
 The database uses a clean relational schema designed to balance data integrity with query simplicity:
 * Normalized categories (3NF): categorical metadata (brands and panel types) live in separate dimension tables. This eliminates redundant strings across rows, handles scraping typos and variants, and keeps foreign key lookups clean.
 * Flat hardware specifications: core technical specs reside directly in the main monitors table. Since these are fixed, direct attributes of a specific monitor model, keeping them in the main table avoids over-normalization and unnecessary table joins.
