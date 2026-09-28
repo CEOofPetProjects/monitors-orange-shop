@@ -131,4 +131,4 @@ Gaming (144Hz+) markup: 22,199₽ (Gaming) vs 15,999₽ (Standard)
 ![price by resolutions stacked bar](visualizations/resolutions_price_stacked.png)
 
 ### Panel types by price tiers
-![price by panel types stacked bar](visualizations/panel_price_stacked.png)
+![price by panel types stacked bar](visualizations/panel_types_price_stacked.png)
