@@ -160,9 +160,6 @@ This chart indicates:
 
 ![price vs reviews by panel types scatter](visualizations/price_reviews_panel_scatter.png)
 
-<details>
-<summary><b>Hidden atrocity</b></summary>
-
 ### Price and review volume distribution by resolution and panel types (percentiles)
 I'm not sure if this chart is readable/legible so I am including it as an extra.
 * The TN monitors in premium are 1080p ones (now I'm really curious what they are, might check out later), and at the bottom – "other", which, given the pricing, means low resolution
@@ -171,8 +168,6 @@ I'm not sure if this chart is readable/legible so I am including it as an extra.
 * Most ultrawide monitors sit in upper-mid and premium categories, and most of them in upper-mid are VA, and OLED ultrawides are mostly in the most expensive section, and the IPS ultrawides are very scarce
 
 ![price vs reviews by resolution and panel types scatter](visualizations/price_reviews_resolution_panel_scatter.png)
-
-</details>
 
 ### Resolution by price tiers
 ![price by resolutions stacked bar](visualizations/resolutions_price_stacked.png)
