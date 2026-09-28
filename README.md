@@ -8,12 +8,12 @@ Why did I decide to choose monitors? I am somewhat of a monitor enthusiast mysel
 
 This allows for the categorization of data into distinct business buckets (market positioning vs tangible visual performance vs connectivity), generating a rich, multi-dimensional analysis that goes beyond simple price tracking. DNS was selected simply due to their comprehensive catalog and deep technical filtering options, which provided a robust dataset for this snapshot.
 
-## Tech stack & Methodologies
+## Tech stack
 * Database architecture: sqlite3 library, Entity-Relationship Diagram (ERD) design, relational schema optimization, custom SQL VIEWs for denormalization 
 * Data analytics: Python, pandas (quantile-based price tiering, percentile ranking to handle skewness)
 * Data visualization: Matplotlib and Seaborn (high-impact business charting, color-palette adherence, "chart junk" elimination)
 
-## The Pipeline
+## The pipeline
 The project is modularized into sequential scripts that mirror a professional ETL and analytics workflow:
 * ```1_db_creation.py``` to create SQLite database
 * ```2_db_insert.py``` to insert data from csv snapshot file into the database
@@ -23,6 +23,8 @@ The project is modularized into sequential scripts that mirror a professional ET
 * ```6_panel_types_stacked.py``` and ```6_resolution_stacked.py``` to construct 100% stacked bar charts to establish baseline feature expectations across four dynamic price quartiles (Budget, Lower-mid, Upper-mid, Premium)
 
 ## ERD
+> I was today years old when I found out that you can just shove your SQL code into drawio and it will automatically create an ERD for you... you learn something new every day I guess.
+The ERD over here is pretty straight-forward, I'd also like to believe that it represents a normalized database. Since there are a lot of integers, there isn't much to offload to separate entities, HDMI and DisplayPort versions don't count since they are basically numbers that may occasionally have a letter next to them. The brands and panel types got separate tables. Diagonal and user rating were the only ones that needed decimals so I used REAL since there is no FLOAT in SQL.
 ![Monitors Database ERD](visualizations/ERD.png)
 
 ## Analysis
