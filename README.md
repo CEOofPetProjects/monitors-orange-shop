@@ -24,6 +24,7 @@ The project is modularized into sequential scripts that mirror a professional ET
 
 ## ERD
 > I was today years old when I found out that you can just shove your SQL code into drawio and it will automatically create an ERD for you... you learn something new every day I guess.
+
 The ERD over here is pretty straight-forward, I'd also like to believe that it represents a normalized database. Since there are a lot of integers, there isn't much to offload to separate entities, HDMI and DisplayPort versions don't count since they are basically numbers that may occasionally have a letter next to them. The brands and panel types got separate tables. Diagonal and user rating were the only ones that needed decimals so I used REAL since there is no FLOAT in SQL.
 ![Monitors Database ERD](visualizations/ERD.png)
 
