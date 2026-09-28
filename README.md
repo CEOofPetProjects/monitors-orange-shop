@@ -82,8 +82,8 @@ CURRENT MARKET ANALYSIS FOR 2026-09-26 SNAPSHOT
                         min     max   median  count
 price_tier                                         
 Budget (Bottom 25%)    4999   11999   9799.0    189
-Mid-Range (25-50%)    12199   19999  15999.0    190
-Premium (50-75%)      20199   40299  27999.0    182
+Lower-mid (25-50%)    12199   19999  15999.0    190
+Upper-mid (50-75%)    20199   40299  27999.0    182
 Enthusiast (Top 25%)  40999  549999  69999.0    187 
 
 > TOP 10 BRANDS BY MARKET PRESENCE <
@@ -139,6 +139,15 @@ Gaming (144Hz+) markup: 22,199₽ (Gaming) vs 15,999₽ (Standard)
 </details>
 
 ### Price and review volume distribution by resolution (percentiles)
+This chart shows us every monitor SKU on DNS website from the recent snapshot (this one in particular is from September 26, 2026).
+The easiest way to describe how to read this chart is higher = more expensive, lower = less expensive, to the right = more reviews, to the left = less reviews. Dots represent what resolution it is, I have decided to divide it into Full HD (FHD/1080p), Quad HD (QHD/1440p), 4K or higher (4K+), Ultrawide (wider that 16:9), and other.
+The chart indicates several things:
+* The chart is denser in the "lower price, more reviews" and "higher price, less reviews", and the corner with "higher price, more reviews" is relatively empty, so, like, basic stuff – people mostly buy cheaper monitors (the status of the store itself most likely influences that as well, but it is out of the scope)
+* The budget category (below 11999₽) is dominated by 1080p monitors
+* The lower-mid category (11999-19999₽) is mostly populated by 1080p and 1440p monitors, with some inclusions of ultrawide and 4k monitors
+* The upper-mid category (19999-40474₽) consists of mostly 1440p, 4K+ and ultrawide monitors, but 1080p is also still there, but it gets way less reviews than the higher resolution monitors
+* And, finally, the premium category (above 40474₽) gets less reviews in general, with only a handful of monitors sitting above 80th reviews percentile, with most expensive being 4K+ and ultrawide monitors
+
 ![price vs reviews by resolutions scatter](visualizations/price_reviews_resolution_scatter.png)
 
 ### Price and review volume distribution by panel types (percentiles)
