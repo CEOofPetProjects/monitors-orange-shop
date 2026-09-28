@@ -1,5 +1,7 @@
 # E-Commerce Market Intelligence: Monitors
 
+<small>This repository is protected under the **CC BY-NC 4.0** license.<small>
+
 ## Project overview
 This project simulates a corporate market intelligence pipeline by analyzing e-commerce retail snapshots (specs, pricing, review volume, and consumer ratings) from a major electronics retailer. To demonstrate strict technical versatility, I designed a robust relational database schema (ERD), executed the database setup using DDL SQL queries inside a Python script, and built a custom SQL VIEW to optimize relational data into an easily exportable flat table format.
 
