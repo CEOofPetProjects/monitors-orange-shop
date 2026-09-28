@@ -15,12 +15,12 @@ This allows for the categorization of data into distinct business buckets (marke
 
 ## The Pipeline
 The project is modularized into sequential scripts that mirror a professional ETL and analytics workflow:
-* 1_db_creation.py to create SQLite database
-* 2_db_insert.py to insert data from csv snapshot file into the database
-* 3_export_flat_csv.py to export data from SQL VIEW into an analytics-ready flat csv file 
-* 4_pandas_analysis.py to run core exploratory data analysis
-* 5_price_reviews_panel_types_scatter.py and 5_price_reviews_resolution_scatter.py to generate scatter plots mapping market traction against price using percentile distributions
-* 6_panel_types_stacked.py and 6_resolution_stacked.py to construct 100% stacked bar charts to establish baseline feature expectations across four dynamic price quartiles (Budget, Lower-mid, Upper-mid, Premium)
+* ```1_db_creation.py``` to create SQLite database
+* ```2_db_insert.py``` to insert data from csv snapshot file into the database
+* ```3_export_flat_csv.py``` to export data from SQL VIEW into an analytics-ready flat csv file 
+* ```4_pandas_analysis.py``` to run core exploratory data analysis
+* ```5_price_reviews_panel_types_scatter.py``` and ```5_price_reviews_resolution_scatter.py``` to generate scatter plots mapping market traction against price using percentile distributions
+* ```6_panel_types_stacked.py``` and ```6_resolution_stacked.py``` to construct 100% stacked bar charts to establish baseline feature expectations across four dynamic price quartiles (Budget, Lower-mid, Upper-mid, Premium)
 
 ## ERD
 ![Monitors Database ERD](visualizations/ERD.png)
