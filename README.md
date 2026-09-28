@@ -121,13 +121,13 @@ Curved screen markup:   28,199₽ (Curved) vs 17,799₽ (Flat)
 Gaming (144Hz+) markup: 22,199₽ (Gaming) vs 15,999₽ (Standard)
 ```
 
-### Resolutions by price and reviews (percentiles)
+### Price and review volume distribution by resolution (percentiles)
 ![price vs reviews by resolutions scatter](visualizations/price_reviews_resolution_scatter.png)
 
-### Panel types by price and reviews (percentiles)
+### Price and review volume distribution by panel types (percentiles)
 ![price vs reviews by panel types scatter](visualizations/price_reviews_panel_scatter.png)
 
-### Resolutions by price tiers
+### Resolution by price tiers
 ![price by resolutions stacked bar](visualizations/resolutions_price_stacked.png)
 
 ### Panel types by price tiers
