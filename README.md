@@ -40,7 +40,9 @@ The database uses a clean relational schema designed to balance data integrity w
 
 ## Analysis
 
-### 4_pandas_analysis.py output
+<details>
+<summary><b>Click to expand 4_pandas_analysis.py output</b></summary>
+
 ```
 ===================================================================
 SNAPSHOT COMPARISON: 2026-09-26 vs 2026-08-01
@@ -133,6 +135,8 @@ OLED        83999.0     93
 Curved screen markup:   28,199₽ (Curved) vs 17,799₽ (Flat)
 Gaming (144Hz+) markup: 22,199₽ (Gaming) vs 15,999₽ (Standard)
 ```
+
+</details>
 
 ### Price and review volume distribution by resolution (percentiles)
 ![price vs reviews by resolutions scatter](visualizations/price_reviews_resolution_scatter.png)
