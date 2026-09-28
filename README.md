@@ -25,7 +25,15 @@ The project is modularized into sequential scripts that mirror a professional ET
 ## ERD
 > I was today years old when I found out that you can just shove your SQL code into drawio and it will automatically create an ERD for you... you learn something new every day I guess.
 
-The ERD over here is pretty straight-forward, I'd also like to believe that it represents a normalized database. Since there are a lot of integers, there isn't much to offload to separate entities, HDMI and DisplayPort versions don't count since they are basically numbers that may occasionally have a letter next to them. The brands and panel types got separate tables. Diagonal and user rating were the only ones that needed decimals so I used REAL since there is no FLOAT in SQL.
+The database uses a clean relational schema designed to balance data integrity with query simplicity:
+* Normalized categories (3NF): categorical metadata (brands and panel types) live in separate dimension tables. This eliminates redundant strings across rows, handles scraping typos and variants, and keeps foreign key lookups clean.
+* Flat hardware specifications: core technical specs reside directly in the main monitors table. Since these are fixed, direct attributes of a specific monitor model, keeping them in the main table avoids over-normalization and unnecessary table joins.
+* Data types and time standards: column types map directly to the underlying specs:
+  * INTEGER: stores tangible monitor specs (like pixel count, refresh rate, brightness, etc), prices and boolean flags (stored as 0 or 1)
+  * REAL: stores decimal values like monitor diagonal (in inches) and consumer ratings
+  * TEXT: stores model and brand names, panel type names and HDMI/DisplayPort versions
+  * DATETIME: stores timestamps (snapshot_datetime) in ISO 8601 format (YYYY-MM-DD HH:MM:SS), allowing chronological sorting in SQL queries and seamless parsing in pandas via pd.to_datetime()
+
 ![Monitors Database ERD](visualizations/ERD.png)
 
 ## Analysis
