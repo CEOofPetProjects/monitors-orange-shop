@@ -168,7 +168,12 @@ I'm not sure if this chart is readable/legible so I am including it as an extra.
 ![price vs reviews by resolution and panel types scatter](visualizations/price_reviews_resolution_panel_scatter.png)
 
 ### Resolution by price tiers
+Here we can see more precisely how each pricing tier is populated in regards to monitor resolution. Good luck getting 4K or even 1440p if you are in the budget category – more than 90% is 1080p. And in lower-mid there is much more choice – more than 30% is populated by 1440p, and there are even some 4K and ultrawide monitors here! In upper-mid, 1440p grows a little, along with 4K+ and ultrawide, and they all eat away at 1080p, and in premium 1080p shrinks to maybe below 5%, and 4K+ nearly doubles its share size.
+
 ![price by resolutions stacked bar](visualizations/resolutions_price_stacked.png)
 
 ### Panel types by price tiers
+Even more plain here: budget and lower-mid look practically the same: more than 75% is IPS, almost everything else is VA. Then we have upper-mid with slightly more VA and slightly less IPS (15-20% difference), with some OLED sprinkled on top. Then at last we have premium where OLED has around 50% of the share, VA has around 1/3 of the rest and IPS – around 2/3, with some TN here and there.
+At least from this chart we can see that majority of the market is captured by IPS, which comes at no surprise since IPS is a mature and versatile technology which performs well in most activities (and also there are different backlight options, but it is out of scope)
+
 ![price by panel types stacked bar](visualizations/panel_types_price_stacked.png)
