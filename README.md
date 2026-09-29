@@ -36,7 +36,9 @@ The database uses a clean relational schema designed to balance data integrity w
 
 <details>
 <summary><b>Click to open the ERD</b></summary>
+
 ![Monitors Database ERD](visualizations/ERD.png)
+
 </details>
 
 ## Analysis
