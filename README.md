@@ -82,7 +82,7 @@ price_tier
 Budget (Bottom 25%)    4999   11999   9799.0    189
 Lower-mid (25-50%)    12199   19999  15999.0    190
 Upper-mid (50-75%)    20199   40299  27999.0    182
-Enthusiast (Top 25%)  40999  549999  69999.0    187 
+Premium (Top 25%)     40999  549999  69999.0    187 
 
 > TOP 10 BRANDS BY MARKET PRESENCE <
               listings_count  median_price  total_reviews
