@@ -34,7 +34,10 @@ The database uses a clean relational schema designed to balance data integrity w
   * TEXT: stores model and brand names, panel type names and HDMI/DisplayPort versions
   * DATETIME: stores timestamps (snapshot_datetime) in ISO 8601 format (YYYY-MM-DD HH:MM:SS), allowing chronological sorting in SQL queries and seamless parsing in pandas via pd.to_datetime()
 
+<details>
+<summary><b>Click to open the ERD</b></summary>
 ![Monitors Database ERD](visualizations/ERD.png)
+</details>
 
 ## Analysis
 
@@ -137,6 +140,8 @@ Gaming (144Hz+) markup: 22,199₽ (Gaming) vs 15,999₽ (Standard)
 </details>
 
 ### Price and review volume distribution by resolution (percentiles)
+![price vs reviews by resolutions scatter](visualizations/price_reviews_resolution_scatter.png)
+
 This chart shows us every monitor SKU on DNS website from the recent snapshot (this one in particular is from September 26, 2026).
 The easiest way to describe how to read this chart is higher = more expensive, lower = less expensive, to the right = more reviews, to the left = less reviews. Dots represent what resolution it is, I have decided to divide it into Full HD (FHD/1080p), Quad HD (QHD/1440p), 4K or higher (4K+), Ultrawide (wider that 16:9), and other.
 The chart indicates several things:
@@ -146,9 +151,10 @@ The chart indicates several things:
 * The upper-mid category (19999-40474₽) consists of mostly 1440p, 4K+ and ultrawide monitors, but 1080p is also still there, but it gets way less reviews than the higher resolution monitors
 * And, finally, the premium category (above 40474₽) gets less reviews in general, with only a handful of monitors sitting above 80th reviews percentile, and most expensive being 4K+ and ultrawide monitors
 
-![price vs reviews by resolutions scatter](visualizations/price_reviews_resolution_scatter.png)
 
 ### Price and review volume distribution by panel types (percentiles)
+![price vs reviews by panel types scatter](visualizations/price_reviews_panel_scatter.png)
+
 This chart shows the same axis, with the same monitors being in the same places, but now the colors of the dots indicate the panel types of the monitors.
 There are 4 types of monitor panels here: IPS, VA, OLED, TN.
 This chart indicates:
@@ -156,27 +162,29 @@ This chart indicates:
 * TN is almost nonexistent and is either present at the pricing bottom or in premium category for some reason (perhaps some niche gaming monitors?)
 * OLED is strictly in premium (it is almost perfectly sits above the dividing line), but there are models in the "more reviews" zone, so there is definitely a market for them, especially considering that quality and factory yields have improved in recent years
 
-![price vs reviews by panel types scatter](visualizations/price_reviews_panel_scatter.png)
 
 ### Price and review volume distribution by resolution and panel types (percentiles)
+![price vs reviews by resolution and panel types scatter](visualizations/price_reviews_resolution_panel_scatter.png)
+
 I'm not sure if this chart is readable/legible so I am including it as an extra.
 * The TN monitors in premium are 1080p ones (now I'm really curious what they are, might check out later), and at the bottom – "other", which, given the pricing, means low resolution
 * It seems that all OLED monitors are above 1080p (could not spot a single blue rhombus), but most reviewed being 1440p ones, which makes sense considering that 4K+ and ultrawide OLED monitors sitting higher (= expensive) are (surprise) more expensive
 * Budget is mostly composed of 1080p IPS and VA monitors, as already seen from previous graphs, so nothing new here
 * Most ultrawide monitors sit in upper-mid and premium categories, and most of them in upper-mid are VA, and OLED ultrawides are mostly in the most expensive section, and the IPS ultrawides are very scarce
 
-![price vs reviews by resolution and panel types scatter](visualizations/price_reviews_resolution_panel_scatter.png)
 
 ### Resolution by price tiers
-Here we can see more precisely how each pricing tier is populated in regards to monitor resolution. Good luck getting 4K or even 1440p if you are in the budget category – more than 90% is 1080p. And in lower-mid there is much more choice – more than 30% is populated by 1440p, and there are even some 4K and ultrawide monitors here! In upper-mid, 1440p grows a little, along with 4K+ and ultrawide, and they all eat away at 1080p, and in premium 1080p shrinks to maybe below 5%, and 4K+ nearly doubles its share size.
-
 ![price by resolutions stacked bar](visualizations/resolutions_price_stacked.png)
 
+Here we can see more precisely how each pricing tier is populated in regards to monitor resolution. Good luck getting 4K or even 1440p if you are in the budget category – more than 90% is 1080p. And in lower-mid there is much more choice – more than 30% is populated by 1440p, and there are even some 4K and ultrawide monitors here! In upper-mid, 1440p grows a little, along with 4K+ and ultrawide, and they all eat away at 1080p, and in premium 1080p shrinks to maybe below 5%, and 4K+ nearly doubles its share size.
+
+
 ### Panel types by price tiers
+![price by panel types stacked bar](visualizations/panel_types_price_stacked.png)
+
 Even more plain here: budget and lower-mid look practically the same: more than 75% is IPS, almost everything else is VA. Then we have upper-mid with slightly more VA and slightly less IPS (15-20% difference), with some OLED sprinkled on top. Then at last we have premium where OLED has around 50% of the share, VA has around 1/3 of the rest and IPS – around 2/3, with some TN here and there.
 At least from this chart we can see that majority of the market is captured by IPS, which comes at no surprise since IPS is a mature and versatile technology which performs well in most activities (and also there are different backlight options, but it is out of scope)
 
-![price by panel types stacked bar](visualizations/panel_types_price_stacked.png)
 
 ### Brand pricing spread
 How to read this chart
