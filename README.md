@@ -198,3 +198,12 @@ How to read this chart
 * Mind the logarithmic x axis (I literally stated it on the chart but still): each major gridline step represents exponential growth to keep budget monitors readable on the same chart as ultra-premium ones
 
 ![brand pricing spread](visualizations/brand_pricing_spread.png)
+
+So, what does this chart convey?
+* The orange tech retail chain covers the bottom (of this top-10 brands by SKU rating) with two in-house brands that barely overlap – DEXP sits at the very bottom, while ARDOR GAMING starts roughly where DEXP's middle range ends and goes after entry-level gamers, though other budget brands still compete in that space – AOC's middle half overlaps with both of the chain's brands.
+* LG, MSI, Acer and ASUS have very wide spreads, their catalogs run from cheap office screens to high-end gaming panels, so they try to cover everyone. Samsung follows the same approach, but its range sits noticeably higher.
+* ARDOR GAMING is one of the tightest catalogs (only DEXP is comparable) with just three outliers, and they're not far above the rest of its range, so it looks like it sticks to budget and mid-range gaming monitors.
+* GIGABYTE has a fairly high median and a wide box, but its upper whisker stops around 100000₽ and there are no outliers beyond it, and unlike ASUS it stays out of ultra-premium territory.
+* Dell is the priciest brand, even though it doesn't avoid cheap models: it has the highest median of any brand, yet its cheapest models go about as low as ARDOR GAMING's and GIGABYTE's. The difference is that even the cheapest quarter of Dell's lineup costs about as much as a typical GIGABYTE, and, to some extent, more than a typical model from any other brand except Samsung.
+* Halo products are mostly an ASUS thing, they have the longest outlier tail in the dataset, with three models stretching out as far as 550000₽, which are probably ProArt monitors or something for ultra-premium gaming. LG and Samsung each have their own clusters of expensive outliers, likely OLEDs and super-duper-ultrawides, Dell has only two.
+* Prices skew to the right. For most brands, especially LG, MSI, Acer, ASUS and AOC, the bulk of models sit in the affordable to mid-range zone, with a thin tail of expensive enthusiast gear stretching out to the right. The axis is logarithmic, so in actual rubles the skew is even bigger than it looks on the chart.
