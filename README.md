@@ -44,7 +44,7 @@ The database uses a clean relational schema designed to balance data integrity w
 ## Analysis
 
 <details>
-<summary><b>Click to expand 4_pandas_analysis.py output</b></summary>
+<summary><b>Click to open 4_pandas_analysis.py output</b></summary>
 
 ```
 ===================================================================
