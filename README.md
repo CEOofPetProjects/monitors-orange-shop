@@ -177,3 +177,12 @@ Even more plain here: budget and lower-mid look practically the same: more than 
 At least from this chart we can see that majority of the market is captured by IPS, which comes at no surprise since IPS is a mature and versatile technology which performs well in most activities (and also there are different backlight options, but it is out of scope)
 
 ![price by panel types stacked bar](visualizations/panel_types_price_stacked.png)
+
+### Brand pricing spread
+How to read this chart
+* Colored box in general is middle 50%/interquartile range, and it includes a median – vertical line inside that marks the 50th percentile price. Half of the brand's monitors cost less than this number, and half cost more. The left edge of the box is 25th percentile, the right edge is 75th percentile. Box width represents price concentration (narrow box = tight, predictable pricing; wide box = broad catalog targeting multiple market segments). 
+* Whiskers (horizontal lines that kinda end with brackets) extend to the minimum and maximum prices within standard statistical limits (excluding extreme outliers)
+* Outliers are represented as individual dots, and they are products priced far outside the brand's main cluster
+* Mind the logarithmic x axis (I literally stated it on the chart but still): each major gridline step represents exponential growth to keep budget monitors readable on the same chart as ultra-premium ones
+
+![brand pricing spread](visualizations/brand_pricing_spread.png)
