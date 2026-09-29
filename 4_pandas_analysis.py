@@ -52,7 +52,7 @@ print(f"CURRENT MARKET ANALYSIS FOR {latest_date} SNAPSHOT")
 print("=" * 67)
 
 print("> PRICE SEGMENTATION <")
-labels = ['Budget (Bottom 25%)', 'Mid-Range (25-50%)', 'Premium (50-75%)', 'Enthusiast (Top 25%)']
+labels = ['Budget (Bottom 25%)', 'Lower-mid (25-50%)', 'Upper-mid (50-75%)', 'Premium (Top 25%)']
 latest_df['price_tier'] = pd.qcut(latest_df['price'].dropna(), q=4, labels=labels)
 tier_summary = latest_df.groupby('price_tier', observed=True)['price'].agg(['min', 'max', 'median', 'count'])
 print(tier_summary, "\n")
