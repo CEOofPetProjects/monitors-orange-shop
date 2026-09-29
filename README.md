@@ -15,7 +15,7 @@ This allows for the categorization of data into distinct business buckets (marke
 * Data analytics: Python, pandas (quantile-based price tiering, percentile ranking to handle skewness)
 * Data visualization: Matplotlib and Seaborn (high-impact business charting, color-palette adherence, "chart junk" elimination)
 
-## The pipeline
+## Pipeline
 The project is modularized into sequential scripts that mirror a professional ETL and analytics workflow:
 * ```1_db_creation.py``` to create SQLite database
 * ```2_db_insert.py``` to insert data from csv snapshot file into the database
