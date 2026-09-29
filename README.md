@@ -7,10 +7,10 @@
 ## Project overview
 This project simulates a corporate market intelligence pipeline by analyzing e-commerce retail snapshots (specs, pricing, review volume, and consumer ratings) from a major electronics retailer. To demonstrate strict technical versatility, I designed a robust relational database schema (ERD), executed the database setup using DDL SQL queries inside a Python script, and built a custom SQL VIEW to optimize relational data into an easily exportable flat table format.
 
-## Why monitors?
+## Why monitors
 Why did I decide to choose monitors? I am somewhat of a monitor enthusiast myself – already got 2 (I know – crazy, right?). But in all seriousness, monitors are excellent for data analysis because they offer the perfect balance of analytical dimensions. You have commercial data (brand name, ratings, review volume, pricing) layered against hard technical specs (like resolution, panel types, refresh rates, viewing angles, and IO).
 
-This allows for the categorization of data into distinct business buckets (market positioning vs tangible visual performance vs connectivity), generating a rich, multi-dimensional analysis that goes beyond simple price tracking. DNS was selected simply due to their comprehensive catalog and deep technical filtering options, which provided a robust dataset for this snapshot.
+This allows for the categorization of data into distinct business buckets (market positioning vs tangible visual performance vs connectivity), generating a rich, multi-dimensional analysis that goes beyond simple price tracking. Orange tech retail chain was selected simply due to their comprehensive catalog and deep technical filtering options, which provided a robust dataset for this snapshot.
 
 ## Tech stack
 * Database architecture: sqlite3 library, Entity-Relationship Diagram (ERD) design, relational schema optimization, SQL VIEW for denormalization 
@@ -146,7 +146,7 @@ Gaming (144Hz+) markup: 22,199₽ (Gaming) vs 15,999₽ (Standard)
 ### Price and review volume distribution by resolution (percentiles)
 ![price vs reviews by resolutions scatter](visualizations/price_reviews_resolution_scatter.png)
 
-This chart shows us every monitor SKU on DNS website from the recent snapshot (this one in particular is from September 26, 2026).
+This chart shows us every monitor SKU on orange tech retail chain website from the recent snapshot (this one in particular is from September 26, 2026).
 The easiest way to describe how to read this chart is higher = more expensive, lower = less expensive, to the right = more reviews, to the left = less reviews. Dots represent what resolution it is, I have decided to divide it into Full HD (FHD/1080p), Quad HD (QHD/1440p), 4K or higher (4K+), Ultrawide (wider that 16:9), and other.
 The chart indicates several things:
 * The chart is denser in the "lower price, more reviews" and "higher price, less reviews", and the corner with "higher price, more reviews" is relatively empty, so, like, basic stuff – people mostly buy cheaper monitors (the status of the store itself most likely influences that as well, but it is out of the scope)
