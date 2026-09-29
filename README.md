@@ -11,7 +11,7 @@ Why did I decide to choose monitors? I am somewhat of a monitor enthusiast mysel
 This allows for the categorization of data into distinct business buckets (market positioning vs tangible visual performance vs connectivity), generating a rich, multi-dimensional analysis that goes beyond simple price tracking. DNS was selected simply due to their comprehensive catalog and deep technical filtering options, which provided a robust dataset for this snapshot.
 
 ## Tech stack
-* Database architecture: sqlite3 library, Entity-Relationship Diagram (ERD) design, relational schema optimization, custom SQL VIEWs for denormalization 
+* Database architecture: sqlite3 library, Entity-Relationship Diagram (ERD) design, relational schema optimization, custom SQL VIEW for denormalization 
 * Data analytics: Python, pandas (quantile-based price tiering, percentile ranking to handle skewness)
 * Data visualization: Matplotlib and Seaborn (high-impact business charting, color-palette adherence, "chart junk" elimination)
 
