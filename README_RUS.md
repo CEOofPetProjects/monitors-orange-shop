@@ -191,12 +191,6 @@ At least from this chart we can see that majority of the market is captured by I
 
 
 ### Ценовое распределения по брендам
-How to read this chart
-* Colored box in general is middle 50%/interquartile range, and it includes a median – vertical line inside that marks the 50th percentile price. Half of the brand's monitors cost less than this number, and half cost more. The left edge of the box is 25th percentile, the right edge is 75th percentile. Box width represents price concentration (narrow box = tight, predictable pricing; wide box = broad catalog targeting multiple market segments). 
-* Whiskers (horizontal lines that kinda end with brackets) extend to the minimum and maximum prices within standard statistical limits (excluding extreme outliers)
-* Outliers are represented as individual dots, and they are products priced far outside the brand's main cluster
-* Mind the logarithmic x axis (I literally stated it on the chart but still): each major gridline step represents exponential growth to keep budget monitors readable on the same chart as ultra-premium ones
-
 Как читать этот график
 * Цветной прямоугольник отображает средние 50% выборки/межквартильный размах и включает медиану — вертикальную черту внутри, обозначающую цену на уровне 50-го перцентиля. Половина мониторов бренда стоит дешевле этой отметки, половина — дороже. Левая граница прямоугольника соответствует 25 перцентилю, правая – 75. Ширина прямоугольника отражает характер ценообразования (узкий прямоугольник означает узкое, предсказуемое; широкий — обширный ассортимент, охватывающий разные сегменты рынка).
 * "Усы" (горизонтальные линии, заканчивающиеся ограничителями) простираются до минимальных и максимальных рамок ценообразования в пределах стандартных статистических границ (за исключением выбросов).
