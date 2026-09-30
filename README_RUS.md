@@ -180,20 +180,21 @@ I'm not sure if this chart is readable/legible so I am including it as an extra.
 * Most ultrawide monitors sit in upper-mid and premium categories, and most of them in upper-mid are VA, and OLED ultrawides are mostly in the most expensive section, and the IPS ultrawides are very scarce
 
 
-### Разрешения по ценовым категориям
+### Разрешения по ценовым сегментам
 ![price by resolutions stacked bar](visualizations/resolutions_price_stacked.png)
 
-Here we can see more precisely how each pricing tier is populated in regards to monitor resolution. Good luck getting 4K or even 1440p if you are in the budget category – more than 90% is 1080p. And in lower-mid there is much more choice – more than 30% is populated by 1440p, and there are even some 4K and ultrawide monitors here! In upper-mid, 1440p grows a little, along with 4K+ and ultrawide, and they all eat away at 1080p, and in premium 1080p shrinks to maybe below 5%, and 4K+ nearly doubles its share size.
+Здесь можно точнее увидеть, как распределяются мониторы с разным разрешением в зависимости от ценового сегмента. В бюджетной категории рассчитывать на 4K или даже 1440p практически не приходится: более 90% моделей здесь имеют разрешение 1080p. А вот в сегменте "ниже среднего" выбор гораздо шире: на долю 1440p приходится более 30%, встречаются даже модели с разрешением 4K и ultrawide мониторы. В сегменте "выше среднего" доля 1440p, а также 4K+ и ultrawide-мониторов немного возрастает, доля 1080p падает; в премиум-классе же доля 1080p падает примерно ниже 5%, а доля 4K+ увеличивается почти вдвое.
 
 
-### Матрицы по ценовым категориям
+### Матрицы по ценовым сегментам
 ![price by panel types stacked bar](visualizations/panel_types_price_stacked.png)
 
-Even more plain here: budget and lower-mid look practically the same: more than 75% is IPS, almost everything else is VA. Then we have upper-mid with slightly more VA and slightly less IPS (15-20% difference), with some OLED sprinkled on top. Then at last we have premium where OLED has around 50% of the share, VA has around 1/3 of the rest and IPS – around 2/3, with some TN here and there.
-At least from this chart we can see that majority of the market is captured by IPS, which comes at no surprise since IPS is a mature and versatile technology which performs well in most activities (and also there are different backlight options, but it is out of scope)
+Здесь всё ещё нагляднее: бюджетный сегмент и сегмент "ниже среднего" выглядят практически одинаково — более 75% занимают IPS-матрицы, а почти всё остальное — VA. Далее идет сегмент "выше среднего", где доля VA немного выше, а IPS — ниже (разница 15–20%), при этом встречаются и OLED-модели. И наконец, премиум-сегмент: здесь на долю OLED приходится около 50%, а из оставшейся части примерно треть занимают VA-матрицы и две трети — IPS (и немного TN поверх).
+Как минимум, этот график показывает, что значительную часть рынка занимает технология IPS. Это неудивительно, ведь IPS — зрелое и универсальное решение, отлично подходящее для большинства задач (существуют также различные варианты подсветки, но это выходит за рамки данного кейса).
 
 
 ### Ценовое распределения по брендам
+
 Как читать этот график
 * Цветной прямоугольник отображает средние 50% выборки/межквартильный размах и включает медиану — вертикальную черту внутри, обозначающую цену на уровне 50-го перцентиля. Половина мониторов бренда стоит дешевле этой отметки, половина — дороже. Левая граница прямоугольника соответствует 25 перцентилю, правая – 75. Ширина прямоугольника отражает характер ценообразования (узкий прямоугольник означает узкое, предсказуемое; широкий — обширный ассортимент, охватывающий разные сегменты рынка).
 * "Усы" (горизонтальные линии, заканчивающиеся ограничителями) простираются до минимальных и максимальных рамок ценообразования в пределах стандартных статистических границ (за исключением выбросов).
