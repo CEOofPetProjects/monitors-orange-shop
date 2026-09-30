@@ -149,35 +149,36 @@ Gaming (144Hz+) markup: 22,199₽ (Gaming) vs 15,999₽ (Standard)
 ### Распределение разрешений по ценам и количеству отзывов
 ![price vs reviews by resolutions scatter](visualizations/price_reviews_resolution_scatter.png)
 
-This chart shows us every monitor SKU on DNS website from the recent snapshot (this one in particular is from September 26, 2026).
-The easiest way to describe how to read this chart is higher = more expensive, lower = less expensive, to the right = more reviews, to the left = less reviews. Dots represent what resolution it is, I have decided to divide it into Full HD (FHD/1080p), Quad HD (QHD/1440p), 4K or higher (4K+), Ultrawide (wider that 16:9), and other.
-The chart indicates several things:
-* The chart is denser in the "lower price, more reviews" and "higher price, less reviews", and the corner with "higher price, more reviews" is relatively empty, so, like, basic stuff – people mostly buy cheaper monitors (the status of the store itself most likely influences that as well, but it is out of the scope)
-* The budget category (below 11999₽) is dominated by 1080p monitors
-* The lower-mid category (11999-19999₽) is mostly populated by 1080p and 1440p monitors, with some inclusions of ultrawide and 4k monitors
-* The upper-mid category (19999-40474₽) consists of mostly 1440p, 4K+ and ultrawide monitors, but 1080p is also still there, but it gets way less reviews than the higher resolution monitors
-* And, finally, the premium category (above 40474₽) gets less reviews in general, with only a handful of monitors sitting above 80th reviews percentile, and most expensive being 4K+ and ultrawide monitors
+На этом графике представлены все модели мониторов с сайта оранжевой сети согласно данным последнего снапшота (конкретно этот от 26 сентября 2026 года). Проще всего принцип чтения графика описать так: выше — дороже, ниже — дешевле; правее — больше отзывов, левее — меньше отзывов. Точки обозначают разрешение экрана: я разделил их на Full HD ("FHD"/1080p), Quad HD ("QHD"/1440p), 4K или выше ("4K+"), "Ultrawide" (с соотношением сторон шире 16:9) и "Прочее".
+
+График демонстрирует несколько закономерностей:
+* Наибольшая плотность точек наблюдается в зонах "низкая цена, много отзывов" и "высокая цена, мало отзывов", тогда как угол "высокая цена, много отзывов" относительно пустует. В целом всё очевидно: люди чаще покупают недорогие мониторы (на это, вероятно, влияет и специфика самого магазина, но этот вопрос выходит за рамки данного кейса)
+* В бюджетном сегменте (дешевле 11 999 ₽) преобладают мониторы с разрешением 1080p
+* В сегменте "ниже среднего" (11 999–19 999 ₽) представлены преимущественно модели 1080p и 1440p, а также встречаются мониторы формата ultrawide и 4K
+* Сегмент "выше среднего" (19 999–40 474 ₽) состоит в основном из моделей 1440p, 4K+ и ultrawide; мониторы 1080p здесь тоже присутствуют, но получают значительно меньше отзывов по сравнению с моделями более высокого разрешения
+* Наконец, в премиум-сегменте (дороже 40 474 ₽) общее количество отзывов ниже: лишь единичные модели преодолевают порог 80-го перцентиля по числу отзывов, а самые дорогие устройства — это мониторы 4K+ и ultrawide
 
 
 ### Распределение матриц по ценам и количеству отзывов
 ![price vs reviews by panel types scatter](visualizations/price_reviews_panel_scatter.png)
 
-This chart shows the same axis, with the same monitors being in the same places, but now the colors of the dots indicate the panel types of the monitors.
-There are 4 types of monitor panels here: IPS, VA, OLED, TN.
-This chart indicates:
-* That budget, lower-mid and upper-mid is almost equally dominated by monitors with IPS and VA panels
-* TN is almost nonexistent and is either present at the pricing bottom or in premium category for some reason (perhaps some niche gaming monitors?)
-* OLED is strictly in premium (it is almost perfectly sits above the dividing line), but there are models in the "more reviews" zone, so there is definitely a market for them, especially considering that quality and factory yields have improved in recent years
+На этом графике представлены ​​те же оси и те же модели мониторов, расположенные на тех же местах, однако теперь цвет точек указывает на тип используемой в них матрицы.
+Здесь представлены четыре типа матриц: IPS, VA, OLED и TN.
+
+График демонстрирует следующее:
+* В бюджетном, а также в нижнем среднем и верхнем среднем сегментах доминируют мониторы с панелями IPS и VA
+* Модели с панелями TN практически отсутствуют; они встречаются либо в самом низу ценового диапазона, либо по какой-то причине в премиальном сегменте (возможно, это нишевые игровые мониторы)
+* Технология OLED представлена ​​исключительно в премиум-сегменте (такие модели располагаются практически строго над его разделительной линией), однако есть экземпляры и в зоне "большого количества обзоров", что свидетельствует о наличии спроса — особенно с учётом повышения качества и улучшения показателей эффективности производства в последние годы
 
 
 ### Распределение разрешений и матриц по ценам и количеству отзывов
 ![price vs reviews by resolution and panel types scatter](visualizations/price_reviews_resolution_panel_scatter.png)
 
-I'm not sure if this chart is readable/legible so I am including it as an extra.
-* The TN monitors in premium are 1080p ones (now I'm really curious what they are, might check out later), and at the bottom – "other", which, given the pricing, means low resolution
-* It seems that all OLED monitors are above 1080p (could not spot a single blue rhombus), but most reviewed being 1440p ones, which makes sense considering that 4K+ and ultrawide OLED monitors sitting higher (= expensive) are (surprise) more expensive
-* Budget is mostly composed of 1080p IPS and VA monitors, as already seen from previous graphs, so nothing new here
-* Most ultrawide monitors sit in upper-mid and premium categories, and most of them in upper-mid are VA, and OLED ultrawides are mostly in the most expensive section, and the IPS ultrawides are very scarce
+Привожу этот график в качестве дополнительного материала.
+* TN-мониторы в премиум-сегменте представлены с разрешением 1080p, а в нижней части ценового диапазона они в категории "прочее", что при таких показателях подразумевает более низкое разрешение экрана
+* Похоже, что все OLED-мониторы имеют разрешение выше 1080p (я не нашёл ни одного синего ромба), однако больше всего отзывов у OLED-мониторов с разрешением 1440p; это вполне логично, учитывая, что OLED-мониторы форматов 4K+ и Ultrawide стоят дороже
+* Бюджетный сегмент, как уже было видно на предыдущих графиках, состоит преимущественно из IPS и VA-мониторов с разрешением 1080p, так что здесь нет ничего нового
+* Большинство ultrawide мониторов относится к категориям "выше среднего" и "премиум": в сегменте "выше среднего" преобладают модели с матрицей VA, OLED-модели этого формата сосредоточены в основном в самой дорогой категории, а IPS-мониторы формата ultrawide встречаются крайне редко
 
 
 ### Разрешения по ценовым сегментам
