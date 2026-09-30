@@ -1,4 +1,4 @@
-# E-Commerce Market Intelligence: Monitors
+# Анализ Рынка Электронной Коммерции: Мониторы
 
 <small>Этот репозиторий защищён лицензией **CC BY-NC 4.0**.<small>
 
@@ -143,7 +143,7 @@ Gaming (144Hz+) markup: 22,199₽ (Gaming) vs 15,999₽ (Standard)
 
 </details>
 
-### Price and review volume distribution by resolution (percentiles)
+### Распределение разрешений по ценам и количеству отзывов
 ![price vs reviews by resolutions scatter](visualizations/price_reviews_resolution_scatter.png)
 
 This chart shows us every monitor SKU on DNS website from the recent snapshot (this one in particular is from September 26, 2026).
@@ -156,7 +156,7 @@ The chart indicates several things:
 * And, finally, the premium category (above 40474₽) gets less reviews in general, with only a handful of monitors sitting above 80th reviews percentile, and most expensive being 4K+ and ultrawide monitors
 
 
-### Price and review volume distribution by panel types (percentiles)
+### Распределение матриц по ценам и количеству отзывов
 ![price vs reviews by panel types scatter](visualizations/price_reviews_panel_scatter.png)
 
 This chart shows the same axis, with the same monitors being in the same places, but now the colors of the dots indicate the panel types of the monitors.
@@ -167,7 +167,7 @@ This chart indicates:
 * OLED is strictly in premium (it is almost perfectly sits above the dividing line), but there are models in the "more reviews" zone, so there is definitely a market for them, especially considering that quality and factory yields have improved in recent years
 
 
-### Price and review volume distribution by resolution and panel types (percentiles)
+### Распределение разрешений и матриц по ценам и количеству отзывов
 ![price vs reviews by resolution and panel types scatter](visualizations/price_reviews_resolution_panel_scatter.png)
 
 I'm not sure if this chart is readable/legible so I am including it as an extra.
@@ -177,25 +177,31 @@ I'm not sure if this chart is readable/legible so I am including it as an extra.
 * Most ultrawide monitors sit in upper-mid and premium categories, and most of them in upper-mid are VA, and OLED ultrawides are mostly in the most expensive section, and the IPS ultrawides are very scarce
 
 
-### Resolution by price tiers
+### Разрешения по ценовым категориям
 ![price by resolutions stacked bar](visualizations/resolutions_price_stacked.png)
 
 Here we can see more precisely how each pricing tier is populated in regards to monitor resolution. Good luck getting 4K or even 1440p if you are in the budget category – more than 90% is 1080p. And in lower-mid there is much more choice – more than 30% is populated by 1440p, and there are even some 4K and ultrawide monitors here! In upper-mid, 1440p grows a little, along with 4K+ and ultrawide, and they all eat away at 1080p, and in premium 1080p shrinks to maybe below 5%, and 4K+ nearly doubles its share size.
 
 
-### Panel types by price tiers
+### Матрицы по ценовым категориям
 ![price by panel types stacked bar](visualizations/panel_types_price_stacked.png)
 
 Even more plain here: budget and lower-mid look practically the same: more than 75% is IPS, almost everything else is VA. Then we have upper-mid with slightly more VA and slightly less IPS (15-20% difference), with some OLED sprinkled on top. Then at last we have premium where OLED has around 50% of the share, VA has around 1/3 of the rest and IPS – around 2/3, with some TN here and there.
 At least from this chart we can see that majority of the market is captured by IPS, which comes at no surprise since IPS is a mature and versatile technology which performs well in most activities (and also there are different backlight options, but it is out of scope)
 
 
-### Brand pricing spread
+### Ценовое распределения по брендам
 How to read this chart
 * Colored box in general is middle 50%/interquartile range, and it includes a median – vertical line inside that marks the 50th percentile price. Half of the brand's monitors cost less than this number, and half cost more. The left edge of the box is 25th percentile, the right edge is 75th percentile. Box width represents price concentration (narrow box = tight, predictable pricing; wide box = broad catalog targeting multiple market segments). 
 * Whiskers (horizontal lines that kinda end with brackets) extend to the minimum and maximum prices within standard statistical limits (excluding extreme outliers)
 * Outliers are represented as individual dots, and they are products priced far outside the brand's main cluster
 * Mind the logarithmic x axis (I literally stated it on the chart but still): each major gridline step represents exponential growth to keep budget monitors readable on the same chart as ultra-premium ones
+
+Как читать этот график
+* Цветной прямоугольник отображает средние 50% выборки/межквартильный размах и включает медиану — вертикальную черту внутри, обозначающую цену на уровне 50-го перцентиля. Половина мониторов бренда стоит дешевле этой отметки, половина — дороже. Левая граница прямоугольника соответствует 25 перцентилю, правая – 75. Ширина прямоугольника отражает характер ценообразования (узкий прямоугольник означает узкое, предсказуемое; широкий — обширный ассортимент, охватывающий разные сегменты рынка).
+* "Усы" (горизонтальные линии, заканчивающиеся ограничителями) простираются до минимальных и максимальных рамок ценообразования в пределах стандартных статистических границ (за исключением выбросов).
+* Выбросы обозначены отдельными точками, это модели, цена которых значительно выходит за рамки основного ценового диапазона бренда.
+* Обратите внимание на логарифмическую шкалу по оси x: каждый основной шаг сетки соответствует экспоненциальному росту; это сделано для того, чтобы бюджетные мониторы можно было корректно отобразить на одном графике вместе с моделями ультра-премиум класса.
 
 ![brand pricing spread](visualizations/brand_pricing_spread.png)
 
