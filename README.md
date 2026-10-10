@@ -164,7 +164,7 @@ There are 4 types of monitor panels here: IPS, VA, OLED, TN.
 This chart indicates:
 * That budget, lower-mid and upper-mid is almost equally dominated by monitors with IPS and VA panels
 * TN is almost nonexistent and is either present at the pricing bottom or in premium category for some reason (perhaps some niche gaming monitors?)
-* OLED is strictly in premium (it is almost perfectly sits above the dividing line), but there are models in the "more reviews" zone, so there is definitely a market for them, especially considering that quality and factory yields have improved in recent years
+* OLED is strictly in premium (it almost perfectly sits above the dividing line), but there are models in the "more reviews" zone, so there is definitely a market for them, especially considering that quality and factory yields have improved in recent years
 
 
 ### Price and review volume distribution by resolution and panel types (percentiles)
